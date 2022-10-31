@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a bug that should be fixed
+title: '[BUG]: '
+labels:
+  - bug
+assignees:
+  - AshMW2724
+body:
+  - type: input
+    attributes:
+      label: Describe Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: When I click...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduce Bug
+      description: Steps to reproduce the behavior.
+      placeholder: 1. Go to '...' 2. Click on '....' 3. Scroll down to '....' 4. See error
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I expected...
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Browser
+      description: The browser that was used when the bug occured.
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Opera
+        - Safari
+        - Chroma Android
+        - Firefox for Android
+        - Opera Android
+        - Safari on iOS
+        - Samsung Internet
+        - WebView Android
+        - '[Not Applicable] Mobile App'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: >-
+        Add any other context about the problem here. (Provide screenshots if
+        applicable)
