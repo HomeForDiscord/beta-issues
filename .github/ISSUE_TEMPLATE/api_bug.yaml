@@ -1,0 +1,40 @@
+name: API Bug Report
+description: Report a bug with the public API
+title: '[API Bug]: '
+assignees:
+  - DanPlayz0
+labels:
+  - api
+  - bug
+body:
+  - type: input
+    attributes:
+      label: Route
+      description: Past the URL to the route with the issue.
+      placeholder: https://api.fordiscord.com/servers/[uid]
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Response Code
+      description: Paste the HTTP response code from the API.
+      placeholder: '504'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Response Body
+      description: Past the reponse from the API.
+      placeholder: Paste Response
+      render: json
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: '---'
+  - type: textarea
+    attributes:
+      label: Describe Bug
+      description: Describe the bug and provide screenshots is applicable.
+    validations:
+      required: true
