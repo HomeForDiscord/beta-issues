@@ -1,0 +1,36 @@
+name: Language Report
+description: Issues with laguage on the website (Grammar, spelling, etc.)
+title: '[Language]: '
+labels:
+  - engrish
+assignees:
+  - AshMW2724
+body:
+  - type: input
+    attributes:
+      label: What page?
+      description: Paste the link to the page where the language issue is.
+      placeholder: https://servers.fordiscord.com/manage/[uid]/edit
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Original Text
+      description: Paste the original text and mark the issue with `this syntax`.
+      placeholder: Please `Desrib` your bot
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: New Text
+      description: Enter the replace ment text and mark the correction with `this syntax`
+      placeholder: Please `Describe` your bot
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Confirmation
+      description: Did you make sure the language mistake was not user provided?
+      options:
+        - label: 'Yes'
+          required: true
