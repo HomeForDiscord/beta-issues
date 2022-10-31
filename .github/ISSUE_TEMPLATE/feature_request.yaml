@@ -1,0 +1,30 @@
+name: Feature Request
+description: Request a new feature
+title: '[Feature]: '
+labels:
+  - feature request
+assignees:
+  - AshMW2724
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe the feature you want added to HFD.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Room
+      description: >-
+        If this request is room specific please select which room(s) it applies
+        to.
+      multiple: true
+      options:
+        - Servers
+        - Bots
+        - Templates
+        - Emojis
+        - Stickers
+        - Tools
+        - Pages
+        - Verification
