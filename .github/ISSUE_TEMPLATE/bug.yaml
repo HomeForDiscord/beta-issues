@@ -1,6 +1,6 @@
-name: Bug report
+name: Bug Report
 description: Report a bug that should be fixed
-title: '[BUG]: '
+title: '[Bug]: '
 labels:
   - bug
 assignees:
